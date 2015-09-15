@@ -50,11 +50,24 @@ button, input, .btn, a,btn {
 	font-weight: bold;
 }
 
+button.btn:focus {
+	outline: none !important;
+}
+
 .btn-danger {
 	background-color: #dd5638;
 	border-collapse: #d95131;
 }
 
+.btn-success {
+	background: #79b044;
+	border: none;
+}
+
+.btn-success:hover {
+	background: #6a9b3d;
+	border-color: #6a9b3d;
+}
 img{
 	max-width: 100%;
 }
@@ -87,6 +100,23 @@ img{
 
 .badge.social.gplus:hover {
 	background: #db4b39;
+}
+
+blockquote {
+	padding: 0;
+	border: none;
+	font-style: italic;
+	text-align: left;
+}
+
+blockquote cite {
+	display: block;
+	color: #777;
+	margin: 15px 0 0 0;
+}
+
+blockquote:before {
+	display: none;
 }
 /*HERO*/
 #hero {
@@ -256,6 +286,40 @@ color:white;
 	display: block;
 	font-size: 20px;
 	font-weight: normal;
+}
+
+#kudos {
+	text-align: center;
+}
+
+.row.testimonial {
+margin-bottom: 60px;
+}
+
+.row.testimonial img {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+#signup{
+	text-align: center;
+	background: url('../img/hipster-stuff.jpg') center center repeat fixed;
+	background-size: cover;
+	color: white;
+	padding: 140px 0;
+}
+
+#signup h2 {
+	font-weight: normal;
+}
+
+#signup h2 strong {
+	border-bottom: solid 2px #dd5638;
+}
+
+#signup h2 btn {
+	font-size: 24px;
 }
 /* === CUSTOM CSS SPRITES === */
 i.ci {
