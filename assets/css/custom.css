@@ -39,6 +39,19 @@ h4 {
 	font-size: 18px;
 }
 
+p{
+	margin: 0 0 15px;
+}
+p.lead{
+	font-weight: normal;
+}
+a.link, a:visited {
+	color:#dd5638;
+}
+a:hover {
+	text-decoration: none;
+	color: #c9302c;
+}
 button, input, .btn, a,btn {
 	-webkit-font-smoothing: antialiased;
 	text-rendering:optimizelegibility;
@@ -216,7 +229,11 @@ vertical-align: middle;
 #who-benefits {
 	background:white;
 }
+/* ===LAYOUT=== */
 
+.row + .row {    /* Any number of row element(s) beneath a single parent row element*/
+	margin-top: 20px;
+}
 section {
 	padding:80px 0;
 	
@@ -323,6 +340,33 @@ margin-bottom: 60px;
 #signup .btn {
 	font-size: 24px;
 }
+
+footer {
+	background: #3e4249;
+	color: white;
+	padding: 20px 0 10px;
+	font-size: 12px;
+}
+
+footer p { /*Footer's paragraph tag has margin set to left by default and we dont want that, so declare it 0*/
+	margin: 0;
+}
+
+footer a:link, footer a:visited	 { /*So that the visited links do not change it to blue/purple - which is the background color*/
+	color: white;
+}
+
+footer a:hover {
+	color: #dd5638;
+}
+
+footer li.signup-link a {
+	color: #dd5638;
+}
+
+footer li.signup-link a:hover {
+	font-weight: bold;
+}
 /* === CUSTOM CSS SPRITES === */
 i.ci {
 	display:inline-block;
@@ -337,3 +381,38 @@ i.ci {
 .ci.ci-community	{background-position:-120px 0;}
 .ci.ci-instructor	{background-position:-160px 0;}
 .ci.ci-device		{background-position:-200px 0;}
+
+
+/* ==== MEDIA QUERIES ===== */
+@media screen and ( max-width : 991px ) {	 /*So if your screen is 991 and under will get this style*/
+	#instructor .container {
+		background: rgba(255,255,255,0.8);
+		padding: 20px;
+	}
+}
+
+@media screen and ( max-width : 768px ) {	/* For Ipad*/
+	.logo {
+		width: 50%;
+	}
+	
+	#optin p {
+		margin: 0 0 10px;
+	}
+	
+	#featurrete	iframe {
+		height: 240px;
+	}
+}
+
+@media screen and ( max-width : 568px ) {	/* Iphone 5 and up*/
+	#instructor .num {
+		height: 100px;
+		width: 100px;
+		font-size: 22px;
+	}
+	
+	#instructor .num span {
+		font-size: 16px;
+	}
+}
