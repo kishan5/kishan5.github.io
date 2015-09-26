@@ -239,6 +239,9 @@ section {
 	
 }
 
+section.main-content {
+	padding: 40px 0;
+}
 .section-header {
 	text-align:center;
 }
@@ -537,6 +540,18 @@ footer li.signup-link a:hover {
 	padding: 20px 0 0;
 	border-top: solid 1px #eee;
 }
+
+
+/* === RESOURCES === */
+.resource {
+	width: 31.33333333%;
+	float: left;
+	margin: 0 3% 40px 0;
+}
+
+.resource:nth-child(3n) {
+	margin-right: 0;
+}
 /* === CUSTOM CSS SPRITES === */
 i.ci {
 	display:inline-block;
@@ -595,6 +610,13 @@ textarea {
 	#featurrete	iframe {
 		height: 240px;
 	}
+
+	.resource {
+
+		width: 48%;
+		margin-right: 2%;
+		min-height: 800px;
+	}
 }
 
 @media screen and ( max-width : 568px ) {	/* Iphone 5 and up*/
@@ -606,5 +628,11 @@ textarea {
 	
 	#instructor .num span {
 		font-size: 16px;
+	}
+
+	.resource {
+		width: 100%;
+		margin-right: 0;
+		min-height: 0;
 	}
 }
